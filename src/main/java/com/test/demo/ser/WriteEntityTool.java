@@ -62,6 +62,7 @@ public class WriteEntityTool {
         sb.append("import com.baomidou.mybatisplus.annotation.TableName;\r\n");
         sb.append("import com.baomidou.mybatisplus.extension.activerecord.Model;\r\n");
         sb.append("import io.swagger.annotations.*;\r\n");
+        sb.append("import java.io.Serializable;\r\n");
         sb.append("\r\n");
         // 注释部分
         sb.append("/**\r\n");
@@ -169,7 +170,7 @@ public class WriteEntityTool {
         for(TableInfo t :tables){
             if(t.getTableName().equals(tableName)){
                 for(ColumnInfo c :t.getColumnInfos()){
-                    if("Date".equals(sqlType2JavaType(c.getDataTypeName()))){
+                    if("LocalDateTime".equals(sqlType2JavaType(c.getDataTypeName()))){
                         return true;
                     }
                 }
