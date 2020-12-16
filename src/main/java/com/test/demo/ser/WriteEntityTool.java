@@ -120,7 +120,7 @@ public class WriteEntityTool {
      * @return
      */
     private  String pkgDirName() {
-        String dirName = ConnectParam.BasePath + "/src/main/java/" + ConnectParam.PackageOutPath.replace(".", "/");
+        String dirName = ConnectParam.BasePath + "/demo-mysql-entity/src/main/java/" + ConnectParam.PackageOutPath.replace(".", "/");
         File dir = new File(dirName);
         if (!dir.exists()) {
             dir.mkdirs();

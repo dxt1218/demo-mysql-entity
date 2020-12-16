@@ -23,16 +23,16 @@ public  class  ConnectParam {
     //获得驱动
     public static  String DRIVER = "com.mysql.jdbc.Driver" ;
     //获得url
-    public  static String URL = "jdbc:mysql://49.234.76.112:3306/amor?useUnicode=true&characterEncoding=utf-8";
+    public  static String URL = "jdbc:mysql://49.232.157.105:3306/xyzs?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&maxReconnects=10";
     //获得连接数据库的用户名
     public static String USER = "root";
     //获得连接数据库的密码
-    public static String PASS = "1218";
+    public static String PASS = "dxt@1218";
 
     public static List<TableInfo> Tables = AllTable.getAllTables();
 
     //指定包名
-    public  static String PackageOutPath = "com.xinhu.wealth.appmc.entity";
+    public  static String PackageOutPath = "com.test.demo.dto";
 
     //作者名字
     public static String authorName = "dxt";
